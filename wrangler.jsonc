@@ -10,7 +10,7 @@
     "secrets": { "required": ["AUTH_OPERATOR_SECRET"] },
     "vars": {
         "AUTH_ENVIRONMENT": "production",
-        "AUTH_ORIGIN": "https://rss.shallwetalkeason.xyz",
+        "AUTH_ORIGIN": "https://rss.shallwetalkeasonchan.xyz",
         "AUTH_RP_NAME": "Larafeed",
         "AUTH_CHALLENGE_TTL_SECONDS": "300",
         "AUTH_SESSION_TTL_SECONDS": "2592000",

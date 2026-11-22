@@ -1,6 +1,6 @@
 {
     "$schema": "./node_modules/wrangler/config-schema.json",
-    "name": "larafeed-template",
+    "name": "larafeed",
     "main": "./src/worker/index.ts",
     "compatibility_date": "2026-07-18",
     "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
@@ -10,7 +10,7 @@
     "secrets": { "required": ["AUTH_OPERATOR_SECRET"] },
     "vars": {
         "AUTH_ENVIRONMENT": "production",
-        "AUTH_ORIGIN": "https://larafeed.example.com",
+        "AUTH_ORIGIN": "https://rss.shallwetalkeason.xyz",
         "AUTH_RP_NAME": "Larafeed",
         "AUTH_CHALLENGE_TTL_SECONDS": "300",
         "AUTH_SESSION_TTL_SECONDS": "2592000",
@@ -45,18 +45,18 @@
     "kv_namespaces": [
         {
             "binding": "FULL_CONTENT_KV",
-            "id": "00000000000000000000000000000010"
+            "id": "eebc675b31964a3fb69e912df22122e9"
         },
         {
             "binding": "OAUTH_KV",
-            "id": "00000000000000000000000000000020"
+            "id": "e8b33f2a6d814f00a3588c895b15da6d"
         }
     ],
     "d1_databases": [
         {
             "binding": "DB",
             "database_name": "larafeed-template",
-            "database_id": "00000000-0000-0000-0000-000000000010",
+            "database_id": "43f1cad9-f31d-4a35-a120-d0d6d283567f",
             "migrations_dir": "migrations"
         }
     ],
